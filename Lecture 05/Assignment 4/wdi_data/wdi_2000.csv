@@ -1,4 +1,5 @@
-﻿year,yearcode,countryname,countrycode,prop_urbanpopulation
+wdi_2000
+year,yearcode,countryname,countrycode,prop_urbanpopulation
 2000,YR2000,Afghanistan,AFG,22.078
 2000,YR2000,Africa Eastern and Southern,AFE,28.77277994
 2000,YR2000,Africa Western and Central,AFW,35.33704938
@@ -126,7 +127,6 @@
 2000,YR2000,Kiribati,KIR,42.958
 2000,YR2000,"Korea, Dem. People's Rep.",PRK,59.412
 2000,YR2000,"Korea, Rep.",KOR,79.621
-2000,YR2000,Kosovo,XKX,
 2000,YR2000,Kuwait,KWT,99
 2000,YR2000,Kyrgyz Republic,KGZ,35.298
 2000,YR2000,Lao PDR,LAO,21.977
@@ -182,7 +182,6 @@
 2000,YR2000,North Macedonia,MKD,58.548
 2000,YR2000,Northern Mariana Islands,MNP,90.152
 2000,YR2000,Norway,NOR,76.02
-2000,YR2000,Not classified,INX,
 2000,YR2000,OECD members,OED,75.6023211
 2000,YR2000,Oman,OMN,71.569
 2000,YR2000,Other small states,OSS,50.11261265
@@ -226,7 +225,6 @@
 2000,YR2000,Sri Lanka,LKA,18.38
 2000,YR2000,St. Kitts and Nevis,KNA,32.778
 2000,YR2000,St. Lucia,LCA,27.774
-2000,YR2000,St. Martin (French part),MAF,
 2000,YR2000,St. Vincent and the Grenadines,VCT,45.186
 2000,YR2000,Sub-Saharan Africa,SSF,31.40950851
 2000,YR2000,Sub-Saharan Africa (excluding high income),SSA,31.40720882

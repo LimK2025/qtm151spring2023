@@ -1,4 +1,5 @@
-﻿year,yearcode,countryname,countrycode,prop_urbanpopulation
+wdi_2020
+year,yearcode,countryname,countrycode,prop_urbanpopulation
 2020,YR2020,Afghanistan,AFG,26.026
 2020,YR2020,Africa Eastern and Southern,AFE,36.8283008
 2020,YR2020,Africa Western and Central,AFW,47.85783102
@@ -126,7 +127,6 @@
 2020,YR2020,Kiribati,KIR,55.594
 2020,YR2020,"Korea, Dem. People's Rep.",PRK,62.381
 2020,YR2020,"Korea, Rep.",KOR,81.414
-2020,YR2020,Kosovo,XKX,
 2020,YR2020,Kuwait,KWT,100
 2020,YR2020,Kyrgyz Republic,KGZ,36.856
 2020,YR2020,Lao PDR,LAO,36.29
@@ -182,7 +182,6 @@
 2020,YR2020,North Macedonia,MKD,58.482
 2020,YR2020,Northern Mariana Islands,MNP,91.798
 2020,YR2020,Norway,NOR,82.974
-2020,YR2020,Not classified,INX,
 2020,YR2020,OECD members,OED,81.0250441
 2020,YR2020,Oman,OMN,86.276
 2020,YR2020,Other small states,OSS,62.89971859
@@ -226,7 +225,6 @@
 2020,YR2020,Sri Lanka,LKA,18.713
 2020,YR2020,St. Kitts and Nevis,KNA,30.843
 2020,YR2020,St. Lucia,LCA,18.841
-2020,YR2020,St. Martin (French part),MAF,
 2020,YR2020,St. Vincent and the Grenadines,VCT,53.032
 2020,YR2020,Sub-Saharan Africa,SSF,41.29441625
 2020,YR2020,Sub-Saharan Africa (excluding high income),SSA,41.29302626
