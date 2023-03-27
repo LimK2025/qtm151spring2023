@@ -41,6 +41,8 @@ DROP TABLE IF EXISTS us_congress_members;
 
 -- Note in SQL the codebook is also called a "dictionary"
 -- The option PRIMARY KEY indicates that this is the unique identifier
+-- PRIMARY KEY is like an ID which is unique to each column so it allows data to become merged
+        -- It's a system arguement
 CREATE TABLE us_congress_members (
         member_id    int PRIMARY KEY,
         full_name    varchar(30),
@@ -57,6 +59,8 @@ CREATE TABLE us_congress_members (
 --     to maintain data integrity.
 -- (ii) The maximum length of the strings is another for of quality control
 -- (iii) Include any column names with upper case in double quotations "..."
+-- Capital letters in a column must be put in double quotations ("")
+-- NOT NULL: Means that it is required that it must be filled out absolutely and all the rest of the tables are optional
 
 DROP TABLE IF EXISTS bills_actions;
 
@@ -83,8 +87,16 @@ Try it yourself!
 
 - Create a new table for "bills_subjects"
 -- SQLBook: Code
-# Write your own code
+-- Write your own code
 
+DROP TABLE IF EXISTS bills_subjects;
+
+CREATE TABLE bills_subjects (
+    "Congress"   int,
+    bill_number  int,
+    bill_type    varchar(30),
+    bill_subject varchar(30)
+);
 
 
 -- SQLBook: Markup
@@ -123,6 +135,10 @@ WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 -----  FORMAT indicates that this is a CSV
 -----  HEADER MATCH indicates that the first row contains column
 -----  names and should be ignored when importing.
+
+COPY us_congress_members
+FROM '/Users/kennethlim/Documents/GitHub/qtm151spring2023/Lecture 18/data/us_congress_members.csv'
+WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 -- SQLBook: Markup
 <font size = "5">
 
@@ -243,7 +259,7 @@ Merge Databases
 SELECT * 
 FROM bills_actions
 LEFT JOIN us_congress_members
-ON bills_actions.member_id  = bills_actions.member_id;
+ON us_congress_members.member_id  = bills_actions.member_id;
 
 -- Note: This command may take a few seconds to run. This is normal
 -- In the instructor's computer this took 2 min but may take more 
