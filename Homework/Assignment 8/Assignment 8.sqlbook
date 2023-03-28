@@ -43,7 +43,7 @@ CREATE TABLE results(
 );
 
 COPY results
-FROM '/Users/kennethlim/Documents/GitHub/qtm151spring2023/Homework/Assignment 8/data_raw/lap_times.csv'
+FROM '/private/tmp/data_raw/lap_times.csv'
 WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 -- SQLBook: Markup
 <font size = "5">
@@ -73,7 +73,7 @@ CREATE TABLE drivers(
 );
 
 COPY drivers
-FROM '/Users/kennethlim/Documents/GitHub/qtm151spring2023/Homework/Assignment 8/data_raw/drivers.csv'
+FROM '/private/tmp/data_raw/drivers.csv'
 WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 
 
@@ -116,7 +116,8 @@ HINT: Include "driverId" in quotations since it has a mix of <br>
 upper case and lower case letters
 -- SQLBook: Code
 -- Write your own code
-SELECT COUNT(DISTINCT 'driverId') AS num_unique_driverId
+SELECT COUNT(DISTINCT 'driverId') AS num_unique_driverId,
+    COUNT(*) AS num_drivers
 FROM drivers;
 -- SQLBook: Markup
 <font size = "5">
@@ -133,10 +134,10 @@ HINT: Include "driverId" in quotations since it has a mix of <br>
 upper case and lower case letters
 -- SQLBook: Code
 -- Write your own code
-SELECT 'driverID',
+SELECT "driverId",
     AVG(milliseconds)
-FROM lap_times
-GROUP BY 'driverID';
+FROM results
+GROUP BY "driverId";
 -- SQLBook: Markup
 <font size = "5">
 
@@ -155,5 +156,5 @@ upper case and lower case letters
 -- Write your own code
 SELECT * 
 FROM drivers
-LEFT JOIN 'driverId'
-ON driverId.'driver_Id'  = drivers.'driver_Id';
+LEFT JOIN results
+ON results."driverId" = drivers."driverId";
