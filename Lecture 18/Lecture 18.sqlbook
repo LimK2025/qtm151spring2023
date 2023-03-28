@@ -141,7 +141,7 @@ WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 -----  names and should be ignored when importing.
 
 COPY us_congress_members
-FROM '/Users/kennethlim/Documents/GitHub/qtm151spring2023/Lecture 18/data/us_congress_members.csv'
+FROM '/private/tmp/data lecture 18/us_congress_members.csv'
 WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 -- SQLBook: Markup
 <font size = "5">
