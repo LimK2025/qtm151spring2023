@@ -135,7 +135,7 @@ upper case and lower case letters
 -- SQLBook: Code
 -- Write your own code
 SELECT "driverId",
-    AVG(milliseconds)
+    AVG(milliseconds) AS avg_milliseconds
 FROM results
 GROUP BY "driverId";
 -- SQLBook: Markup
