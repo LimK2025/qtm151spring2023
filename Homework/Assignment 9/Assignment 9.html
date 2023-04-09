@@ -14950,7 +14950,8 @@ it has a mix of upper and lower case letters</p>
 <span class="n">milliseconds_driver</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;SELECT </span><span class="se">\&quot;</span><span class="s2">driverId</span><span class="se">\&quot;</span><span class="s2">, </span><span class="se">\</span>
 <span class="s2">                                                AVG(milliseconds) as avg_milliseconds </span><span class="se">\</span>
 <span class="s2">                                        FROM lap_times_sql </span><span class="se">\</span>
-<span class="s2">                                        GROUP BY </span><span class="se">\&quot;</span><span class="s2">driverId</span><span class="se">\&quot;</span><span class="s2">;&quot;</span><span class="p">),</span>
+<span class="s2">                                        GROUP BY </span><span class="se">\&quot;</span><span class="s2">driverId</span><span class="se">\&quot;\</span>
+<span class="s2">                                       ORDER BY avg_milliseconds;&quot;</span><span class="p">),</span>
                                   <span class="n">con</span><span class="p">)</span>
 </pre></div>
 
